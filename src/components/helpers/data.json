@@ -1,0 +1,29 @@
+{
+    "frameworks":[
+        {
+            "id": 1,
+            "name": "React",
+            "web": "asdfas"
+        },
+        {
+            "id": 1,
+            "name": "Angular",
+            "web": "asdfas"
+        },
+        {
+            "id": 1,
+            "name": "Vue",
+            "web": "asdfas"
+        },
+        {
+            "id": 1,
+            "name": "Polymer",
+            "web": "asdfas"
+        },
+        {
+            "id": 1,
+            "name": "Svelte",
+            "web": "asdfas"
+        }
+    ]
+}

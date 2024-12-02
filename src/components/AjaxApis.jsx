@@ -12,9 +12,9 @@ export default class AjaxApi extends Component{
     state = {
         pokemons: []
     }
-    componentDidMount(){//las peticiones se hacen aqui
-        let url = "https://pokeapi.co/api/v2/pokemon/";//url de la peticion
-        fetch(url)//las peticiones funcionarian como de normal dentro de la funcion
+    componentDidMount(){//Las peticiones se hacen aqui
+        let url = "https://pokeapi.co/api/v2/pokemon/";//Url de la peticion
+        fetch(url)//Las peticiones funcionarian como de normal dentro de la funcion
         .then(res => res.json())
         .then(json => {
             //console.log(json);

@@ -24,7 +24,7 @@ export default class RenderizadoElementos extends Component {
                     {
                         this.state.cosas.map((el) => (<li key={el}>{el}</li>))
                     }
-                    {/*por cada elemento de un array genera un elemento*/}
+                    {/*Por cada elemento de un array genera un elemento*/}
                 </ol>
                 <h2>otra lista</h2>
                 <ul>

@@ -24,7 +24,7 @@ class CicloVida extends Component{
     componentDidMount(){
         //1 en este momento el componente ya esta en el dom
     }
-    componentDidUpdate(prevProps, prevState){//ambas variables son como estaban las props y state antes de la actualizacion
+    componentDidUpdate(prevProps, prevState){//Ambas variables son como estaban las props y state antes de la actualizacion
         //2 en este momento el estado o props cambian
     }
     componentWillUnmount(){

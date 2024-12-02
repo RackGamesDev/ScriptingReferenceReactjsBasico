@@ -4,7 +4,7 @@ import ContadorHijo from "./MemorizacionHijo.jsx";
 export default function Memorizacion(props){
     const [contador, setContador] = useState(0);
     //const sumar = () => setContador(contador + 1);
-    const sumar = useCallback(() => {//similar al useEffect pero rerenderiza los componentes memo en cache, ese componente tiene que estar involucrado con la variable (?)
+    const sumar = useCallback(() => {//Similar al useEffect pero rerenderiza los componentes memo en cache, ese componente tiene que estar involucrado con la variable (?)
         setContador(contador + 1);
     }, [contador]);
     const restar = () => setContador(contador - 1);
@@ -16,7 +16,7 @@ export default function Memorizacion(props){
                 <button onClick={restar}>-</button>
             </nav>
             <h4>{contador}</h4>
-            <ContadorHijo />{/*de normal este elemento se re-renderizaria cada vez que cambie contador, mero al usar memo() solo se renderiza y calcula la primera vez*/}
+            <ContadorHijo />{/*De normal este elemento se re-renderizaria cada vez que cambie contador, mero al usar memo() solo se renderiza y calcula la primera vez*/}
         </>
     );
 }

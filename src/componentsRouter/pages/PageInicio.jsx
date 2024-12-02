@@ -1,4 +1,4 @@
-export default function Inicio(){//se hace cada elemento por separado en archivos normalmente
+export default function Inicio(){//Se hace cada elemento por separado en archivos normalmente
     return(
         <>
             <h3>inicio</h3>

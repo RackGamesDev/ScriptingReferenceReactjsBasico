@@ -1,18 +1,18 @@
 import {useState} from "react";
-import {useContext} from "react";//necesario
-import ThemeContext, { ThemeProvider } from "./context/ThemeContext.jsx";//importando el context
+import {useContext} from "react";//Necesario
+import ThemeContext, { ThemeProvider } from "./context/ThemeContext.jsx";//Importando el context
 import LanguageContext, { LanguageProvider } from "./context/LanguageContext.jsx";
 import AuthContext, { AuthProvider } from "./context/AuthContent.jsx";
 
 
 const MyPage = () => {
     return(
-        <div className="my-page">{/*componente padre que guarda las variables, que luego afectan a los componentes hijos*/}
+        <div className="my-page">{/*Componente padre que guarda las variables, que luego afectan a los componentes hijos*/}
             <h3>a</h3>
-            <ThemeProvider>{/*todas las exportaciones de ese archivo funcionaran globalmente aqui dentro, asi que envuelve todos los elementos que las vallan a usar*/}
-                <LanguageProvider>{/*concatenando providers*/}
+            <ThemeProvider>{/*Todas las exportaciones de ese archivo funcionaran globalmente aqui dentro, asi que envuelve todos los elementos que las vallan a usar*/}
+                <LanguageProvider>{/*Concatenando providers*/}
                     <AuthProvider>
-                        <Header />{/*este es el unico que necesita el auth, asi que se queda adentro*/}
+                        <Header />{/*Este es el unico que necesita el auth, asi que se queda adentro*/}
                     </AuthProvider>
                     <Main />
                     <Footer />
@@ -25,12 +25,12 @@ const MyPage = () => {
 
 
 const Header = () => {
-    const {theme, handleTheme} = useContext(ThemeContext);//eligiendo que variables sacar y de que context (el componente debe estar dentro)
+    const {theme, handleTheme} = useContext(ThemeContext);//Aligiendo que variables sacar y de que context (el componente debe estar dentro)
     const {handleLanguage} = useContext(LanguageContext);
     const {auth, handleAuth} = useContext(AuthContext);
     return(
         <div className={theme}>
-            <h4>header</h4>{/*este componente cambia cosas que afectan a toda la pagina*/}
+            <h4>header</h4>{/*Este componente cambia cosas que afectan a toda la pagina*/}
             <select name="language" onChange={handleLanguage}>
                 <option value="es">es</option><option value="en">en</option>
             </select>

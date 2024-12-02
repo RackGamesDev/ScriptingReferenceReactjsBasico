@@ -1,13 +1,13 @@
-import React, {createRef, useRef} from "react";//hooks para referencias con el dom
+import React, {createRef, useRef} from "react";//Hooks para referencias con el dom
 
 export default function Referencias(props){
-    //let refMenu = createRef();//en caso de no usar hooks se usa el createRef
-    let refMenu = useRef();//esto por cada elemento referenciado, el useRef para los hooks
+    //let refMenu = createRef();//En caso de no usar hooks se usa el createRef
+    let refMenu = useRef();//Esto por cada elemento referenciado, el useRef para los hooks
     let refMenuBtn = useRef();
 
     const handleToggleMenu = (e) => {
-        //const $menu = document.getElementById("menu");//el dom funciona pero no es recomendado
-        if(refMenuBtn.current.textContent === "menu"){//asi se hace referencia al elemento
+        //const $menu = document.getElementById("menu");//El dom funciona pero no es recomendado
+        if(refMenuBtn.current.textContent === "menu"){//Asi se hace referencia al elemento
             refMenuBtn.current.textContent = "cerrar";
             refMenu.current.style.display = "block";
         } else {
@@ -19,8 +19,8 @@ export default function Referencias(props){
     return(
         <>
             <h2>referencias</h2>
-            <button id="menu-btn" ref={refMenuBtn} onClick={handleToggleMenu}>menu</button>{/*a los elementos referenciados se les pone el ref, no hace falta id*/}
-            <nav id="menu" ref={refMenu} style={{display: "none"}}>{/*asi se ponen los csss rapidos*/}
+            <button id="menu-btn" ref={refMenuBtn} onClick={handleToggleMenu}>menu</button>{/*A los elementos referenciados se les pone el ref, no hace falta id*/}
+            <nav id="menu" ref={refMenu} style={{display: "none"}}>{/*Asi se ponen los csss rapidos*/}
                 <a href="#">el</a><br />
                 <a href="#">el</a><br />
                 <a href="#">el</a><br />

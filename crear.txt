@@ -1,7 +1,7 @@
 npm create vite@latest prueba --template react
-(ir a la carpeta)
+(Ir a la carpeta)
 npm i
 
-npm run build   para generar carpeta desplegable
-para que haga rutas relativas funcionales con hosts ftp en el package.json se pone el atributo:
+npm run build   Para generar carpeta desplegable
+Para que haga rutas relativas funcionales con hosts ftp en el package.json se pone el atributo:
 "homepage": "./",

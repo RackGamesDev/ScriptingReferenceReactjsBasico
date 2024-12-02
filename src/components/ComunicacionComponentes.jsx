@@ -4,7 +4,7 @@ export default class Padre extends Component {
     state = {
         contador: 0
     }
-    incrementarContador = (e) => {//esta funcion esta en el componente padre pero la ejecutara el hijo
+    incrementarContador = (e) => {//Esta funcion esta en el componente padre pero la ejecutara el hijo
         this.setState({
             contador: this.state.contador + 1
         });
@@ -24,7 +24,7 @@ function Hijo(props){
     return(
         <>
             <h2>a {props.mensaje}</h2>
-            <button onClick={props.incrementarContador}>asdfa</button>{/*recibe una funcion como prop, funcion que le pasa el elemento padre y que ejecutaria el elemento hijo*/}
+            <button onClick={props.incrementarContador}>asdfa</button>{/*Recibe una funcion como prop, funcion que le pasa el elemento padre y que ejecutaria el elemento hijo*/}
         </>
     );
 }

@@ -2,11 +2,11 @@ import { createContext, useState } from "react";
 const ThemeContext = createContext();
 
 
-const initialTheme = "light";//valor por defecto
+const initialTheme = "light";//Valor por defecto
 const ThemeProvider = ({children}) => {
-    const [theme, setTheme] = useState(initialTheme);//va junto a lo de antes
-    const handleTheme = (e) => setTheme(e.target.value);//esto tambien
-    const data = {//tiene todas las cosas que va a exportar
+    const [theme, setTheme] = useState(initialTheme);//Va junto a lo de antes
+    const handleTheme = (e) => setTheme(e.target.value);//Esto tambien
+    const data = {//Tiene todas las cosas que va a exportar
         theme,
         handleTheme
     }

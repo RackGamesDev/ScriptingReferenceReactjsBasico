@@ -1,7 +1,7 @@
 import { createContext, useState } from "react";
 const LanguageContext = createContext();
 const initialLanguage = "es";
-const translations = {//normalmente esto esta mas lleno para que se aplique a mas sitios y se pone en .json aparte
+const translations = {//Normalmente esto esta mas lleno para que se aplique a mas sitios y se pone en .json aparte
     es:{
         parrafo1: "parrafo en espagnol",
         parrafo2: "otro parrafo en espagnol 2"
